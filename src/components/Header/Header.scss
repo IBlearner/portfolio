@@ -1,0 +1,55 @@
+@keyframes spin {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(90deg);}
+    50%  {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#header-container {
+    margin: 120px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 0;
+
+    #header-sticker {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        
+        text-align: center;
+        text-transform: uppercase;
+        transform: rotate(-3deg);
+        font-size: 20px;
+        font-weight: 700;
+        width: 50%;
+        background-color: palevioletred;
+        border-radius: 18px;
+        color: #fff;
+        border: 5px solid white;
+        box-shadow: 5px 10px #888888;
+
+        > * {
+            padding: 10px 0;
+        }
+
+        >:first-child, >:last-child {
+            font-size: 60px;
+        }
+    }
+
+    #header-spinner {
+        flex-grow: 1;
+        
+        animation-name: spin;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        transition: 300ms ease all;
+
+        font-size: 30px;
+        text-align: center;
+        color: palevioletred;
+    }
+}

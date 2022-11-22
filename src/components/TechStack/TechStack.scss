@@ -1,0 +1,32 @@
+#techstack-container {
+    padding: 120px 100px;
+
+    background-color: palevioletred;
+    color: #fff;
+
+    #techstack-boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .techstack-box {
+            width: 300px;
+            height: 200px;
+            
+            background-color: #fff;
+            border: 1px solid palevioletred;
+            color: palevioletred;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 4px;
+
+            transition: width 2s;
+
+            &:hover {
+                cursor: pointer;
+                width: 120%;
+            }
+        }
+    }
+}
